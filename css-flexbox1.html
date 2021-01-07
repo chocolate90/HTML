@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS-flexbox1</title>
+    <style>
+      .container {
+        padding-top:20px;
+        background: beige;
+        height: 100vh;
+        display: flex;
+      }
+
+      .item {
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+      }
+
+      .item1 {
+        background: #ef9a9a;
+        /* order: 3; (순서변경) */
+        /* flex-grow: 1;  (사이즈 변경) */
+        /* flex-shrink: 1; (점점 작아질때 행동) */
+        /* flex-basis: 60%; (container에 따라 지정한만큼 크기 변경) */
+        align-self:  center;
+        /* 아이템 하나만 지정해서 변경 가능 */
+      }
+
+      .item2 {
+        background: #f48fb1;
+      }
+
+      .item3 {
+        background: #ce93d8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+    </div>
+  </body>
+</html>
